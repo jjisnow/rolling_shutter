@@ -11,7 +11,7 @@ parser.add_argument('-t', '--type', help = 'Filetype to look for in folder (defa
 args = parser.parse_args()
 
 # ENTER YOUR DIRECTORIES AND FILE TYPE HERE
-frames = [Image.open(img) for img in glob.glob(args.folder + '/*.' + args.type)]
+frames = [Image.open(img) for img in sorted(glob.glob(args.folder + '/*.' + args.type))]
 
 # Extract size from first frame
 width, height = frames[0].size
