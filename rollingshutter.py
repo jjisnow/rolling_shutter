@@ -4,9 +4,9 @@ def rs(folder,speed=1):
     import glob
     
     # ENTER YOUR DIRECTORIES AND FILE TYPE HERE
-    frame_dir = "/Users/mattparker/Documents/rollingshuttervideos/" + str(folder) + "/"
+    frame_dir = "" + str(folder) + "/"
     frame_file = "png"
-    output_dir = "/Users/mattparker/Documents/rollingshuttervideos/"
+    output_dir = ""
     
     width = 1920
     height = 1080
